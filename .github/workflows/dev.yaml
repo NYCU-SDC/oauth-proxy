@@ -117,7 +117,7 @@ jobs:
                 "enable": true,
                 "title": "Endpoint",
                 "name": "oauth-proxy.eng.sdc.nycu.club",
-                "value": "gcp-eng-deploy:external"
+                "value": "default-eng-deploy:external"
               }
             }
           }'
