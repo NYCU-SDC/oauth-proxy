@@ -116,7 +116,7 @@ jobs:
               "setup_domain": {
                 "enable": true,
                 "title": "Endpoint",
-                "name": "oauth-proxy.eng.sdc.nycu.club",
+                "name": "oauth-proxy.sdc.nycu.club",
                 "value": "default-eng-deploy:external"
               }
             }
