@@ -30,8 +30,7 @@ func main() {
 	// Setup HTTP server
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /health", h.HealthCheck)
-	mux.HandleFunc("GET /api/auth/google/callback", h.HandleCallback)
-	mux.HandleFunc("GET /api/auth/github/callback", h.HandleCallback)
+	mux.HandleFunc("GET /api/auth/{provider}/callback", h.HandleCallback)
 
 	server := &http.Server{
 		Addr:         ":" + cfg.Port,
